@@ -1,5 +1,4 @@
 ﻿using Instituicaodeensino;
-using Instituicaodeensino;
 using Persistencia;
 using System.Collections.Generic;
 using System.Data.SqlClient;
