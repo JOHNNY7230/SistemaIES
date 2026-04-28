@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Apresentacao/Apresentacao.csproj" Id="75bc8f45-b1ab-499a-b0f9-471cc085e6bf" />
+  <Project Path="Instituicaodeensino/Instituicaodeensino.csproj" />
+  <Project Path="Persistencia/Persistencia.csproj" Id="6a91e12b-bf48-4691-aac1-7ab6936c4ca6" />
+  <Project Path="Servico/Servico.csproj" Id="edc1087a-284b-47fe-a36a-742706d022c6" />
+</Solution>
