@@ -25,68 +25,82 @@
 
         private void InitializeComponent()
         {
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.txtCargaHoraria = new System.Windows.Forms.TextBox();
-            this.buttonGravar = new System.Windows.Forms.Button();
-            this.dgvDisciplinas = new System.Windows.Forms.DataGridView();
-            this.lblNome = new System.Windows.Forms.Label();
-            this.lblCarga = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDisciplinas)).BeginInit();
-            this.SuspendLayout();
-
-            // lblNome
-            this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(20, 20);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(115, 15);
-            this.lblNome.Text = "Nome da Disciplina:";
-
+            txtNome = new TextBox();
+            txtCargaHoraria = new TextBox();
+            buttonGravar = new Button();
+            dgvDisciplinas = new DataGridView();
+            lblNome = new Label();
+            lblCarga = new Label();
+            ((System.ComponentModel.ISupportInitialize)dgvDisciplinas).BeginInit();
+            SuspendLayout();
+            // 
             // txtNome
-            this.txtNome.Location = new System.Drawing.Point(20, 40);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(200, 23);
-
-            // lblCarga
-            this.lblCarga.AutoSize = true;
-            this.lblCarga.Location = new System.Drawing.Point(240, 20);
-            this.lblCarga.Name = "lblCarga";
-            this.lblCarga.Size = new System.Drawing.Size(83, 15);
-            this.lblCarga.Text = "Carga Horária:";
-
+            // 
+            txtNome.Location = new Point(20, 40);
+            txtNome.Name = "txtNome";
+            txtNome.Size = new Size(200, 23);
+            txtNome.TabIndex = 4;
+            txtNome.TextChanged += txtNome_TextChanged;
+            // 
             // txtCargaHoraria
-            this.txtCargaHoraria.Location = new System.Drawing.Point(240, 40);
-            this.txtCargaHoraria.Name = "txtCargaHoraria";
-            this.txtCargaHoraria.Size = new System.Drawing.Size(100, 23);
-
+            // 
+            txtCargaHoraria.Location = new Point(240, 40);
+            txtCargaHoraria.Name = "txtCargaHoraria";
+            txtCargaHoraria.Size = new Size(100, 23);
+            txtCargaHoraria.TabIndex = 2;
+            // 
             // buttonGravar
-            this.buttonGravar.Location = new System.Drawing.Point(360, 39);
-            this.buttonGravar.Name = "buttonGravar";
-            this.buttonGravar.Size = new System.Drawing.Size(75, 25);
-            this.buttonGravar.Text = "Gravar";
-            this.buttonGravar.UseVisualStyleBackColor = true;
-            this.buttonGravar.Click += new System.EventHandler(this.buttonGravar_Click);
-
+            // 
+            buttonGravar.Location = new Point(360, 39);
+            buttonGravar.Name = "buttonGravar";
+            buttonGravar.Size = new Size(75, 25);
+            buttonGravar.TabIndex = 1;
+            buttonGravar.Text = "Gravar";
+            buttonGravar.UseVisualStyleBackColor = true;
+            buttonGravar.Click += buttonGravar_Click;
+            // 
             // dgvDisciplinas
-            this.dgvDisciplinas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDisciplinas.Location = new System.Drawing.Point(20, 80);
-            this.dgvDisciplinas.Name = "dgvDisciplinas";
-            this.dgvDisciplinas.Size = new System.Drawing.Size(415, 250);
-
+            // 
+            dgvDisciplinas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvDisciplinas.Location = new Point(20, 80);
+            dgvDisciplinas.Name = "dgvDisciplinas";
+            dgvDisciplinas.Size = new Size(415, 250);
+            dgvDisciplinas.TabIndex = 0;
+            // 
+            // lblNome
+            // 
+            lblNome.AutoSize = true;
+            lblNome.Location = new Point(20, 20);
+            lblNome.Name = "lblNome";
+            lblNome.Size = new Size(113, 15);
+            lblNome.TabIndex = 5;
+            lblNome.Text = "Nome da Disciplina:";
+            // 
+            // lblCarga
+            // 
+            lblCarga.AutoSize = true;
+            lblCarga.Location = new Point(240, 20);
+            lblCarga.Name = "lblCarga";
+            lblCarga.Size = new Size(83, 15);
+            lblCarga.TabIndex = 3;
+            lblCarga.Text = "Carga Horária:";
+            // 
             // DisciplinaForm
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(460, 350);
-            this.Controls.Add(this.dgvDisciplinas);
-            this.Controls.Add(this.buttonGravar);
-            this.Controls.Add(this.txtCargaHoraria);
-            this.Controls.Add(this.lblCarga);
-            this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.lblNome);
-            this.Name = "DisciplinaForm";
-            this.Text = "Cadastro de Disciplinas";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDisciplinas)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(460, 350);
+            Controls.Add(dgvDisciplinas);
+            Controls.Add(buttonGravar);
+            Controls.Add(txtCargaHoraria);
+            Controls.Add(lblCarga);
+            Controls.Add(txtNome);
+            Controls.Add(lblNome);
+            Name = "DisciplinaForm";
+            Text = "Cadastro de Disciplinas";
+            ((System.ComponentModel.ISupportInitialize)dgvDisciplinas).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

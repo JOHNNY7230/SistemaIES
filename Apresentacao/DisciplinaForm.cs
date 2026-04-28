@@ -26,7 +26,7 @@ namespace Apresentacao
             {
                 disciplinaServico.Gravar(new Disciplina()
                 {
-                    Nome = txtNome.Text, 
+                    Nome = txtNome.Text,
                     CargaHoraria = Convert.ToInt16(txtCargaHoraria.Text)
                 });
 
@@ -43,6 +43,11 @@ namespace Apresentacao
         {
             dgvDisciplinas.DataSource = null;
             dgvDisciplinas.DataSource = disciplinaServico.ObterTodas();
+        }
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
